@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(2, 720px);
+    grid-template-rows: repeat(4, 560px);
+    column-gap: 0;
+    row-gap: 80px;
+    justify-content: center;
+}
+
+.item-1-inner {
+    display: flex;
+    width: 160px;
+    height: 560px;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--ss-blue, #2A4073);
+}
+
+.item-2 {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.item-2-inner {
+    display: flex;
+    padding: 40px;
+    height: 440px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
+    background: var(--portfolio-white, #FFF);
+}
+
+.item-title p {
+    color: var(--portfolio-black, var(--gray-900, #222));
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.item-description-bold p {
+    color: var(--portfolio-gray-900, #222);
+    /* Portfolio/24px-Bold */
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+
+.item-contact {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    vertical-align: bottom;
+    background: var(--ss-pink, #F09199);
+}
+
+.item-contact a {
+    color: var(--portfolio-gray-900, #222);
+    text-align: center;
+    
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    vertical-align: bottom;
+    letter-spacing: 0.084px;
+}
+
+.item3 {
+    display: flex;
+}
+
+.item-3-inner {
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 560px;
+    height: 560px;
+    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-description-ja {
+    /* Portfolio/24px-Regular */
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+}
+
+.item-more {
+    color: var(--portfolio-whise, #FFF);
+    background-color: #222;
+    text-align: right;
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.052px;
+}
+
+.item-4 {
+    background-color: #2A4073;
+}
+
+.item-4-inner {
+    display: flex;
+    width: 560px;
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #B3B3B3;
+}
+
+.item-5 {
+    background-color: #2A4073;
+}
+
+.item-5-inner {
+    display: flex;
+    margin: 0 0 0 auto;
+    display: flex;
+    width: 560px;
+    height: 560px;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.item-5-inner img {
+    width: 440px;
+    height: 440px;
+    flex-shrink: 0;
+    border-radius: 440px;
+    background: url("../images/momoko.jpeg"), lightgray 50% / cover no-repeat;
+}
+
+.item-6-inner {
+    display: flex;
+    width: 560px;
+    height: 560px;
+    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-7 {
+
+}
+
+.item-7-inner {
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 560px;
+    height: 440px;
+    padding: 40px 40px 40px 0;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-8 {
+    background-color: #2A4073;
+}
+
+.item-inquiry {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    vertical-align: bottom;
+    background: var(--ss-pink, #F09199);
+}
+
+.item-inquiry a {
+    color: var(--portfolio-gray-900, #222);
+    text-align: center;
+    
+    /* Portfolio/32px-Bold */
+    font-family: Noto Sans JP;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 51.2px */
+}
