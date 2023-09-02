@@ -44,7 +44,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: centor;
-    display: flex;
 }
 
 .header-logo {
@@ -56,6 +55,10 @@ img {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.2px;
+}
+
+.toggle-menu-button {
+    display: none;
 }
 
 .site-menu ul {
@@ -122,4 +125,105 @@ img {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.036px;
+}
+
+.tmp-message {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Roboto';
+    padding-top: 200px;
+}
+
+@media (max-width: 800px) {
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        height: 48px;
+        position: relative;
+    }
+
+    .header-logo {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #222;
+        background-color: #ffffff;
+        opacity: 0.9;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    .header-site-menu ul {
+        text-align: right;
+    }
+
+    .header-site-menu li {
+        padding:0 20px;
+    }
+
+    .header-site-menu.is-show {
+        display: block;
+    }
+
+    .toggle-menu-button {
+        display: block;
+        width: 24px;
+        height: 18px;
+        background-image: url(../images/icon-menu.svg);
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .main {
+        padding-top: 50px;
+    }
+
+    .footer {
+        height: 140px;
+    }
+
+    .footer-name {
+        font-size: 9px;
+        letter-spacing: 0.018px;
+    }
+
+    .copyright {
+        font-size: 9px;
+        letter-spacing: 0.018px;
+    }
+
+    .tmp-message {
+        font-size: 40px;
+        padding-top: 100px;
+    }
 }
